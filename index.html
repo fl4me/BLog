@@ -9,8 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-		<link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script type="text/javascript" src="javascripts/main.js"></script>
+		<script src="javascripts/jquery-2.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
 		<!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,50 +22,200 @@
 	</head>
 
 	<body>
-		<header>
+
+
+<!-- hnav start -->
+		<!-- ================ --> 
+		<nav class=" fixed clearfix navbar navbar-fixed-top" id="nav">
+			<div class="container ">
+				<div class="row">
+					<div class="col-lg-12">
+
+							<!-- main-navigation start -->
+							<!-- ================ -->
+							<div class="main-navigation animated">
+
+								<!-- navbar start -->
+								<!-- ================ -->
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner">Home</a></li>
+												<li><a href="#about">About</a></li>
+												<li><a href="#post">Posts</a></li>
+												<li><a href="#intro">Introduction</a></li>
+												
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- nav end -->
+
+
+		
+		
+		<header id="header" class="col-lg-12">
 			<div class="inner">
 				<h1>Joe Chen&#39;s blog</h1>
 				<h2>a blog for learning</h2>
-				<a href="https://github.com/fl4me/blog.github.io" class="button"><small>View project on</small> GitHub</a>
+				<a href="https://github.com/fl4me/blog" class="button"><small>View project on</small> GitHub</a>
+			</div>
+			<div class="container">
+				<h1>WELCOME!</h1> &nbsp;&nbsp;
+				<h2>to talk <br /><small>&nbsp;&nbsp;&nbsp;&nbsp;though the comment function is no ready yet Orz</small></h2>
+
 			</div>
 		</header>
+		
+		<div id="across">
+			<img src="images/blog.png" />
+		</div>
 
 		<div id="content-wrapper">
 			<div class="inner clearfix">
-				<div class=" info" id="myPost">
+				<div class=" col-lg-12 animated fadeInDownBig" id="myPost">
 					<h1>This can be treated as my first post</h1>
 					<p>many functions a blog should possese is now under editing. In fact I have tried the recommended jekyll to launch a blog and I really already launched a blog -
 						<a href="https://fl4me.github.io">click here to view</a>. But when I tried to modify and add my own contents, those messy files confused me. Even after I read the official document,I could not make it. So I gave it up.Instead, I am now just trying
 						to make this blog alive just by hand.So please wait ...
 					</p>
 					<hr class="divider" />
-					<p><a href="default.html"><h1>Click here</h1></a> to seethe default contents made by github's automatical page generater</p>
-
+					<p><a href="default.html"><h2>Click here</h2></a> to see the default contents made by github's automatical page generater.</p>
+					<h2>OR</h2>
+					<p>you can see the main info from the panel below</p>
 				</div>
+
+				<div class="col-md-6">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-primary">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													### Welcome to GitHub Pages.
+												</a>
+											</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template
+										crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-warning">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Designer Templates
+												</a>
+											</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator
+										and switch to another theme. Your Page content will be preserved.</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													Creating pages manually
+												</a>
+											</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static
+										site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+													Authors and Contributors
+												</a>
+											</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element
+										will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>),
+										and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-danger">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+													Support or Contact
+												</a>
+											</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+									<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
 				<aside id="sidebar">
-					<a href="https://github.com/fl4me/blog.github.io/zipball/master" class="button">
+					<a href="https://github.com/fl4me/blog/zipball/master" class="button">
 						<small>Download</small> .zip file
 					</a>
-					<a href="https://github.com/fl4me/blog.github.io/tarball/master" class="button">
+					<a href="https://github.com/fl4me/blog/tarball/master" class="button">
 						<small>Download</small> .tar.gz file
 					</a>
 
 					<p class="repo-owner">
-						<a href="https://github.com/fl4me/blog.github.io"></a> is maintained by <a href="https://github.com/fl4me">fl4me</a>.</p>
+						<a href="https://github.com/fl4me/blog"></a> is maintained by <a href="https://github.com/fl4me">fl4me</a>.</p>
 
 					<p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
 				</aside>
+
 			</div>
 
 		</div>
+
 		<div class="modal-footer">
 			<div class="container" id="footer-container">
-				
-				<a href="javascript:;" class="pull-right" id="toTop">Back to Top</a>
+				<a href="javascript:;" id="toTop" class=" glyphicon glyphicon-hand-up">&nbsp;Back to Top</a>
 				<br />
 				<hr class="divider" />
 			</div>
-			
+
 		</div>
 
 	</body>
