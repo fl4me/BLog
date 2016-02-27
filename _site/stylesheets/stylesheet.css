@@ -5,26 +5,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-p{
-	text-indent: 2em;
-	text-align: left;
-}
-#myPost{
-	width: 900px;
-}
 
-.modal-footer{
-	background-color: black;
-	height: 100px;
-	margin-bottom: 0;
-}
-#footer-container{
-	
-	margin-top: 10px;
-}
-/**
- * these up are my own css
- */
 html {
   font-family: sans-serif; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -143,7 +124,7 @@ strong {
  */
 
 dfn {
-  font-style: Helvetica;
+  font-style: italic;
 }
 
 /**
@@ -470,7 +451,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/myheader.jpg) 0 0 no-repeat fixed;
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
 
@@ -551,16 +532,13 @@ a.button small {
 }
 header a.button {
   position: absolute;
-  height: 80px;
-  width: 202px;
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
   display: block;
-  width: 202px;
-  height: 80px;
+  width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
   font-size: 21px;
@@ -759,7 +737,7 @@ ol {
 }
 
 dl dd {
-  font-style: Helvetica;
+  font-style: italic;
   font-weight: 100;
 }
 
