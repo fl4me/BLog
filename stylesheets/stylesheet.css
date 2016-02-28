@@ -10,7 +10,7 @@
 
 #toTop {
 
-	
+	left: 100%;
 }
 
 p {
@@ -43,12 +43,6 @@ header .container small {
 	color: white;
 }
 
-.modal-footer {
-	background-color: black;
-	height: 126px;
-	width: -webkit-min-content;
-	margin-bottom: 0;
-}
 
 #footer-container {
 	margin-top: 10px;
@@ -105,6 +99,7 @@ section,
 summary {
 	display: block;
 }
+
 
 
 /**
@@ -883,7 +878,16 @@ footer {
 	font-size: 13px;
 	color: #aaa;
 	background: transparent url('../images/hr.png') 0 0 no-repeat;
+	
 }
+
+#footer {
+	background-color: black;
+	height: 126px;
+	width: 100%;
+	margin-bottom: 0;
+}
+
 
 footer a {
 	color: #666;
